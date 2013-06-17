@@ -18,7 +18,7 @@
 \maketitle
 \section{Les ondes}
 \subsection{Énoncé}
-\paragraph{}\textbf{Propagation d'une onde dans un milieu à une dimension : équation générale, réflexion sur une extrémité libre ou fixe. Ondes stationnaires résonnantes sur une corde ou dans un tuyau : posistionsdes nœuds et des ventres de déplacement (et de pression dans le cas des ondes acoustiques).}
+\paragraph{}\textbf{Propagation d'une onde dans un milieu à une dimension : équation générale, réflexion sur une extrémité libre ou fixe. Ondes stationnaires résonnantes sur une corde ou dans un tuyau : posistions des nœuds et des ventres de déplacement (et de pression dans le cas des ondes acoustiques).}
 \subsection{Équation d'une onde}
 L'équation d'une onde s'écrit de la manière suivante :
 \[y(t,x)=Rsin\left(2\pi\left(\frac{t}{T}-\frac{x}{\lambda}\right)+\varphi\right)\]
@@ -35,7 +35,7 @@ L'équation d'une onde s'écrit de la manière suivante :
 \paragraph{}Cette équation est bien celle présentée ci-dessus.
 \subsection{Réflexion d'une onde}
 \subsubsection{Sur une extrémité fixe}
-\paragraph{}Lorsqu'une onde se réflechit sur une extrémité fixe, elle se réflechit mais elle s'inverse (voir dessin)
+\paragraph{}Lorsqu'une onde se réfléchit sur une extrémité fixe, elle se réfléchit mais elle s'inverse (voir dessin)
 \begin{figure}
 \begin{center}
 \includegraphics[width=5cm]{imgs/reflfixe.png}
@@ -44,7 +44,7 @@ L'équation d'une onde s'écrit de la manière suivante :
 \label{Réflexion d'une onde sur une extrémité fixe}
 \end{figure}
 \subsubsection{Sur une extrémité libre}
-\paragraph{}Lorsqu'une onde se réflechit sur une extrémité fixe, elle se réflechit à l'identique (voir dessin)
+\paragraph{}Lorsqu'une onde se réfléchit sur une extrémité fixe, elle se réfléchit à l'identique (voir dessin)
 \begin{figure}
 \begin{center}
 \includegraphics[width=5cm]{imgs/refllibre.png}
@@ -55,10 +55,10 @@ L'équation d'une onde s'écrit de la manière suivante :
 \subsection{Les ondes stationnaires}
 \paragraph{}Une onde stationnaire est une onde «qui n'avance pas» c'est à dire dont les extrema et les points d'inflexion restent fixes dans l'espace. Il est possible d'en produire grâce à la réflexion d'une onde dans un tuyau ou dans une corde.
 \subsubsection{Équation de l'onde réfléchie}
-\paragraph{}Calculons la fonction de l'onde réfléchie. Elle est obtenue à partir de celle de l'onde incidente. Il faut modifier la variable $x$, en effet l'onde réfléchie n'a pas parcouru un distance $x$ pour arriver à ce point : Elle a du en effet, parcourir le tuyau ou la corde de longueur $L$ avant de se réfléchir et de parcourir une distance $L-x$ pour arriver au point $x$. Donc il faut remplacer $x$ par $2L-x$ dans l'équation de l'onde incidente pour obtenir celle de l'équation de l'onde réfléchie. C'est-à-dire :  
+\paragraph{}Calculons la fonction de l'onde réfléchie. Elle est obtenue à partir de celle de l'onde incidente. Il faut modifier la variable $x$, en effet l'onde réfléchie n'a pas parcouru une distance $x$ pour arriver à ce point : Elle a du en effet, parcourir le tuyau ou la corde de longueur $L$ avant de se réfléchir et de parcourir une distance $L-x$ pour arriver au point $x$. Donc il faut remplacer $x$ par $2L-x$ dans l'équation de l'onde incidente pour obtenir celle de l'équation de l'onde réfléchie. C'est-à-dire :  
 \[y_{incidente}(t,x)=Rsin\left(2\pi \left(\frac{t}{T}-\frac{x}{\lambda}\right)+\varphi\right)\]
 \[y_{r\acute{e}fl\acute{e}chie}(t,x)=y_{incidente}(t,2L-x)=Rsin\left(2\pi \left(\frac{t}{T}-\frac{2L-x}{\lambda}\right)+\varphi\right)\]
-\subsubsection{Onde résultante de la réflexion d'une onde sur une extrémité fixe.}
+\subsubsection{Onde résultante de la réflexion d'une onde sur une extrémité fixe}
 \paragraph{}Pour calculer cette onde résultante, nous devons additionner l'onde incidente à l'onde réfléchie en n'oubliant pas d'inverser le signe de l'onde réfléchie vu que l'extrémité est fixe.
 \[y_{r\acute{e}sultante}(t,x)=y_{incidente}(t,x)+y_{r\acute{e}fl\acute{e}chie}(t,x)\]
 \[=Rsin\left(2\pi \left(\frac{t}{T}-\frac{x}{\lambda}\right)+\varphi\right)-Rsin\left(2\pi \left(\frac{t}{T}-\frac{2L-x}{\lambda}\right)+\varphi\right)\]
@@ -80,7 +80,7 @@ L'équation d'une onde s'écrit de la manière suivante :
 \paragraph{}Pour calculer cette onde résultante, nous devons additionner l'onde incidente à l'onde réfléchie.
 \[y_{r\acute{e}sultante}(t,x)=y_{incidente}(t,x)+y_{r\acute{e}fl\acute{e}chie}(t,x)\]
 \[=Rsin\left(2\pi \left(\frac{t}{T}-\frac{x}{\lambda}\right)+\varphi\right)+Rsin\left(2\pi \left(\frac{t}{T}-\frac{2L-x}{\lambda}\right)+\varphi\right)\]
-\[=2Rsin\left(2\pi \left(\frac{t}{T}-\frac{L}{\lambda}\right)\right)cos\left(2\pi \left(\frac{L-x}{\lambda}\right)\right)\]
+\[=2Rsin\left(2\pi \left(\frac{t}{T}-\frac{L}{\lambda}+\varphi\right)\right)cos\left(2\pi \left(\frac{L-x}{\lambda}\right)\right)\]
 \paragraph{}Nous voulons trouver les extrema et les points d'inflexion de cette expression en fonction de l'espace $x$.
 \paragraph{}Pour calculer les extrema, il faut trouver quand la partie qui dépend de l'espace soit $cos\left(2\pi \left(\frac{L-x}{\lambda}\right)\right)$ prend des valeurs extrémales. Vu qu'il s'agit d'un cosinus, il prend comme valeurs extrémales $1$ et $-1$ lorsque son paramètre vaut $k\pi$. Résolvons cette petite équation.
 \[2\pi\left(\frac{L-x}{\lambda}\right)=k\pi\]
@@ -135,7 +135,7 @@ Rappelons aussi que ($T$ est la tension de la corde)
 \caption{Force résultante des forces de tension}
 \label{Force résultante des forces de tension}
 \end{figure}
-\[\vec{F}=\vec{T_A}+vec{T_B}\]
+\[\vec{F}=\vec{T_A}+\vec{T_B}\]
 \[\Rightarrow F=T\Delta\theta\]
 \paragraph{}Vu que l'onde est approximée par un cercle $\vec{F}$ est la force centripète et vaut donc
 \[F=\Delta m \frac{c^2}{R}\]
@@ -212,7 +212,7 @@ Rappelons aussi que ($T$ est la tension de la corde)
 \end{figure}
 \section{Interférences}
 \subsection{Énoncé}
-\paragraph{}\textbf{figure d'interférence de deux sources ponctuelles synchrones dans le plan : conditions d'interférence constructive et destructive, positions angulaires des nœuds et des ventres.}
+\paragraph{}\textbf{Figure d'interférence de deux sources ponctuelles synchrones dans le plan : conditions d'interférence constructive et destructive, positions angulaires des nœuds et des ventres.}
 \subsection{Interférences de deux sources synchrones dans le plan}
 \paragraph{}Soit deux sources $R_1$ et $R_2$ distantes d'une distance $D$. Nous pouvons donc écrire les équations des ondes émises par les deux sources ($r_1$ est la distance entre le point et $R_1$, $r_2$ est la distance entre le point et $R_2$).
 \[
@@ -235,7 +235,7 @@ y_2(t,r_2) &=& Asin\left(2\pi\left(\frac{t}{T}-\frac{r_2}{\lambda}\right)\right)
 \paragraph{Ventres}Le cosinus est à un extrema lorsqu'il vaut $\pm1$ donc lorsque son paramètre vaut $k\pi (k \in \mathbb{Z})$. Donc
 \[\pi\frac{r_2-r_1}{\lambda}=k\pi (k \in \mathbb{Z})\]
 \[\Leftrightarrow r_2-r_1=k\lambda (k \in \mathbb{Z})\]
-\paragraph{}L'ensemble de points du plan où sont présents les nœuds et les ventres sont donc des hyperboles
+\paragraph{}L'ensemble de points du plan où sont présents les nœuds et les ventres sont donc des hyperboles.
 \subsection{Rappels sur les hyperboles}
 \[r_2-r_1=constante\]
 \[=2a\]
@@ -243,7 +243,7 @@ y_2(t,r_2) &=& Asin\left(2\pi\left(\frac{t}{T}-\frac{r_2}{\lambda}\right)\right)
 \[=Dsin\theta\]
 \begin{figure}
 \begin{center}
-\includegraphics[width=10cm]{imgs/hyperbole.png}
+\includegraphics[width=8cm]{imgs/hyperbole.png}
 \end{center}
 \caption{Rappels sur les hyperboles}
 \label{Rappels sur les hyperboles}
@@ -323,7 +323,7 @@ Vu que $F=ma$ Alors
 \subsection{La réactance inductive}
 \begin{figure}
 \begin{center}
-\includegraphics[width=5cm]{imgs/em_1.png}
+\includegraphics[width=4cm]{imgs/em_1.png}
 \end{center}
 \caption{La réactance inductive}
 \label{La réactance inductive}
@@ -339,6 +339,6 @@ Vu que $F=ma$ Alors
 \[=\frac{\mathscr{E}_m}{\omega L}sin\left(\omega t- \frac{\pi}{2}\right)dt\]
 \[\Leftrightarrow i(t)=\frac{\mathscr{E}_m}{\omega L}sin\left(\omega t- \frac{\pi}{2}\right)dt\]
 \[\Leftrightarrow \mathscr{E}_m=\omega Li_m \text{ où $i_m$ est l'intensité maximale}\]
-\paragraph{}Cette formule rapelle celle du courant continu $U=Ri$
+\paragraph{}Cette formule rappelle celle du courant continu $U=Ri$
 \paragraph{}On remarque que l'intensité est en retard de $\frac{\pi}{2}$ par rapport à la tension.
 \end{document}
