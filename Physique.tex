@@ -69,16 +69,53 @@ L'équation d'une onde s'écrit de la manière suivante :
 \[\Leftrightarrow 2\left(L-x\right)=k\lambda+\frac{\lambda}{2}\]
 \[\Leftrightarrow L-x=\frac{k\lambda}{2}+\frac{\lambda}{4}\]
 \[\Leftrightarrow L-\left(\frac{k\lambda}{2}+\frac{\lambda}{4}\right)=x\]
+\[\Leftrightarrow L-\frac{(2k+1)\lambda}{4}=x\]
 \paragraph{}Pour les points d'inflexion, il faut que la valeur du sinus soit $0$ et donc que celle de son paramètre soit $k\pi$.
 \[2\pi\left(\frac{L-x}{\lambda}\right)=k\pi\]
 \[\Leftrightarrow 2\left(L-x\right)=k\lambda\]
 \[\Leftrightarrow L-x=\frac{k\lambda}{2}\]
 \[\Leftrightarrow L-\frac{k\lambda}{2}=x\]
-\begin{center}\Huge{À finir}\end{center}
+\paragraph{}Il y a donc un nœud au niveau de l'extrémité.
+\subsubsection{Onde résultante de la réflexion d'une onde sur une extrémité libre}
+\paragraph{}Pour calculer cette onde résultante, nous devons additionner l'onde incidente à l'onde réfléchie.
+\[y_{r\acute{e}sultante}(t,x)=y_{incidente}(t,x)+y_{r\acute{e}fl\acute{e}chie}(t,x)\]
+\[=Rsin\left(2\pi \left(\frac{t}{T}-\frac{x}{\lambda}\right)+\varphi\right)+Rsin\left(2\pi \left(\frac{t}{T}-\frac{2L-x}{\lambda}\right)+\varphi\right)\]
+\[=2Rsin\left(2\pi \left(\frac{t}{T}-\frac{L}{\lambda}\right)\right)cos\left(2\pi \left(\frac{L-x}{\lambda}\right)\right)\]
+\paragraph{}Nous voulons trouver les extrema et les points d'inflexion de cette expression en fonction de l'espace $x$.
+\paragraph{}Pour calculer les extrema, il faut trouver quand la partie qui dépend de l'espace soit $cos\left(2\pi \left(\frac{L-x}{\lambda}\right)\right)$ prend des valeurs extrémales. Vu qu'il s'agit d'un cosinus, il prend comme valeurs extrémales $1$ et $-1$ lorsque son paramètre vaut $k\pi$. Résolvons cette petite équation.
+\[2\pi\left(\frac{L-x}{\lambda}\right)=k\pi\]
+\[\Leftrightarrow 2\left(L-x\right)=k\lambda\]
+\[\Leftrightarrow L-x=\frac{k\lambda}{2}\]
+\[\Leftrightarrow L-\frac{k\lambda}{2}=x\]
+\[\Leftrightarrow L-k\lambda=x\]
+\paragraph{}Pour les points d'inflexion, il faut que la valeur du cosinus soit $0$ et donc que celle de son paramètre soit $k\pi+\frac{\pi}{2}$.
+\[2\pi\left(\frac{L-x}{\lambda}\right)=k\pi+\frac{\pi}{2}\]
+\[\Leftrightarrow 2\left(L-x\right)=k\lambda+\frac{\lambda}{2}\]
+\[\Leftrightarrow L-x=\frac{k\lambda}{2}+\frac{\lambda}{4}\]
+\[\Leftrightarrow L-\frac{(2k+1)\lambda}{4}=x\]
+\paragraph{}Il y a donc un ventre au niveau de l'extrémité.
+\subsection{Fréquence émise par un tuyau fermé à ses deux extrémités}
+\paragraph{}Il y a donc des nœuds aux deux extrémités. Vu que la distance entre deux nœuds consécutifs est $\frac{\lambda}{2}$ alors la corde a une longueur de 
+\[L=k\frac{\lambda}{2}(k\in\mathbb{Z})\]
+\[\Leftrightarrow L=\frac{k}{2}cT(k\in\mathbb{Z})\]
+\[\Leftrightarrow L=\frac{k}{2}\frac{c}{f}(k\in\mathbb{Z})\]
+\[\Leftrightarrow f=\frac{kc}{2L}(k\in\mathbb{Z})\]
+\subsection{Fréquence émise par un tuyau fermé à une de ses extrémités}
+\paragraph{}Il y a donc ubn nœud à une extrémité et un ventre à l'autre. Vu que la distance entre deux nœuds consécutifs est $\frac{\lambda}{2}$ et celle entre un nœud et un ventre consécutifs est de $\frac{\lambda}{4}$ alors la corde a une longueur de 
+\[L=k\frac{\lambda}{2}+\frac{\lambda}{4}(k\in\mathbb{Z})\]
+\[\Leftrightarrow L=\left(\frac{k}{2}+\frac{1}{4}\right)cT(k\in\mathbb{Z})\]
+\[\Leftrightarrow L=\left(\frac{2k+1}{4}\right)\frac{c}{f}(k\in\mathbb{Z})\]
+\[\Leftrightarrow f=\frac{\left(2k+1\right)c}{4L}(k\in\mathbb{Z})\]
+\subsection{Fréquence émise par un tuyau ouvert à ses deux extrémités}
+\paragraph{}Il y a donc des ventres aux deux extrémités. Vu que la distance entre deux ventres consécutifs est $\frac{\lambda}{2}$ alors la corde a une longueur de 
+\[L=k\frac{\lambda}{2}(k\in\mathbb{Z})\]
+\[\Leftrightarrow L=\frac{k}{2}cT(k\in\mathbb{Z})\]
+\[\Leftrightarrow L=\frac{k}{2}\frac{c}{f}(k\in\mathbb{Z})\]
+\[\Leftrightarrow f=\frac{kc}{2L}(k\in\mathbb{Z})\]
 \section{Vitesse d'une onde dans une corde tendue}
 \subsection{Énoncé}
 \paragraph{}\textbf{Démonstration donnant la vitesse d'une onde dans une corde tendue.}
-\subsection{Démonstartion}
+\subsection{Démonstration}
 \paragraph{}Plaçons nous dans un référentiel en mouvement avec le maximum. Nous pouvons approximer le maximum de l'onde par un cercle. 
 \begin{figure}
 \begin{center}
