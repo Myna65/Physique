@@ -24,14 +24,14 @@ L'équation d'une onde s'écrit de la manière suivante :
 \[y(t,x)=Rsin\left(2\pi\left(\frac{t}{T}-\frac{x}{\lambda}\right)+\varphi\right)\]
 \paragraph{}Cette formule peut se déduire de celle de l'oscillateur harmonique :
 \[y(t)=Rsin(\omega t+\varphi)\]
-\paragraph{}Cependant, il serait intéressant d'exprimer ceci en fonction de $x$ en plus de $t$. À cette fin, nous partons du fait que considérer l'onde au point $0$ à l'instant $t$ reviens au même que de considérer l'onde au point $x$ à l'instant $t+\frac{x}{c}$. En effet, vu que l'onde se déplace à la vitesse $c$, il lui faudra un temps $\frac{x}{c}$ pour parcourir la distance supplémentaire.
-\paragraph{}Remplaçons donc $t$ par $t+\frac{x}{c}$ dans l'équation de l'onde.
-\[y(t,x)=Rsin\left(\omega \left(t+\frac{x}{c}\right)+\varphi\right)\]
+\paragraph{}Cependant, il serait intéressant d'exprimer ceci en fonction de $x$ en plus de $t$. À cette fin, nous partons du fait que considérer l'onde au point $0$ à l'instant $t$ reviens au même que de considérer l'onde au point $x$ à l'instant $t-\frac{x}{c}$. En effet, vu que l'onde se déplace à la vitesse $c$, il aura fallu un temps $\frac{x}{c}$ pour parcourir la distance supplémentaire.
+\paragraph{}Remplaçons donc $t$ par $t-\frac{x}{c}$ dans l'équation de l'onde.
+\[y(t,x)=Rsin\left(\omega \left(t-\frac{x}{c}\right)+\varphi\right)\]
 \paragraph{}Vu que $\omega=\frac{2\pi}{T}$ alors
-\[y(t,x)=Rsin\left(\frac{2\pi}{T} \left(t+\frac{x}{c}\right)+\varphi\right)\]
-\[=Rsin\left(2\pi \left(\frac{t}{T}+\frac{x}{cT}\right)+\varphi\right)\]
+\[y(t,x)=Rsin\left(\frac{2\pi}{T} \left(t-\frac{x}{c}\right)+\varphi\right)\]
+\[=Rsin\left(2\pi \left(\frac{t}{T}-\frac{x}{cT}\right)+\varphi\right)\]
 \paragraph{}Vu que $T$ est la période temporelle, si nous la multiplions par la vitesse $c$, nous obtenons $cT$ qui est la période spatiale, aussi appelée longueur d'onde $\lambda$. Donc en substituant $\lambda$ à $cT$, nous obtenons
-\[y(t,x)=Rsin\left(2\pi \left(\frac{t}{T}+\frac{x}{\lambda}\right)+\varphi\right)\]
+\[y(t,x)=Rsin\left(2\pi \left(\frac{t}{T}-\frac{x}{\lambda}\right)+\varphi\right)\]
 \paragraph{}Cette équation est bien celle présentée ci-dessus.
 \subsection{Réflexion d'une onde}
 \subsubsection{Sur une extrémité fixe}
@@ -56,13 +56,13 @@ L'équation d'une onde s'écrit de la manière suivante :
 \paragraph{}Une onde stationnaire est une onde «qui n'avance pas» c'est à dire dont les extrema et les points d'inflexion restent fixes dans l'espace. Il est possible d'en produire grâce à la réflexion d'une onde dans un tuyau ou dans une corde.
 \subsubsection{Équation de l'onde réfléchie}
 \paragraph{}Calculons la fonction de l'onde réfléchie. Elle est obtenue à partir de celle de l'onde incidente. Il faut modifier la variable $x$, en effet l'onde réfléchie n'a pas parcouru un distance $x$ pour arriver à ce point : Elle a du en effet, parcourir le tuyau ou la corde de longueur $L$ avant de se réfléchir et de parcourir une distance $L-x$ pour arriver au point $x$. Donc il faut remplacer $x$ par $2L-x$ dans l'équation de l'onde incidente pour obtenir celle de l'équation de l'onde réfléchie. C'est-à-dire :  
-\[y_{incidente}(t,x)=Rsin\left(2\pi \left(\frac{t}{T}+\frac{x}{\lambda}\right)+\varphi\right)\]
-\[y_{r\acute{e}fl\acute{e}chie}(t,x)=y_{incidente}(t,2L-x)=Rsin\left(2\pi \left(\frac{t}{T}+\frac{2L-x}{\lambda}\right)+\varphi\right)\]
+\[y_{incidente}(t,x)=Rsin\left(2\pi \left(\frac{t}{T}-\frac{x}{\lambda}\right)+\varphi\right)\]
+\[y_{r\acute{e}fl\acute{e}chie}(t,x)=y_{incidente}(t,2L-x)=Rsin\left(2\pi \left(\frac{t}{T}-\frac{2L-x}{\lambda}\right)+\varphi\right)\]
 \subsubsection{Onde résultante de la réflexion d'une onde sur une extrémité fixe.}
 \paragraph{}Pour calculer cette onde résultante, nous devons additionner l'onde incidente à l'onde réfléchie en n'oubliant pas d'inverser le signe de l'onde réfléchie vu que l'extrémité est fixe.
 \[y_{r\acute{e}sultante}(t,x)=y_{incidente}(t,x)+y_{r\acute{e}fl\acute{e}chie}(t,x)\]
-\[=Rsin\left(2\pi \left(\frac{t}{T}+\frac{x}{\lambda}\right)+\varphi\right)-Rsin\left(2\pi \left(\frac{t}{T}+\frac{2L-x}{\lambda}\right)+\varphi\right)\]
-\[=2Rsin\left(2\pi \left(\frac{L-x}{\lambda}\right)\right)cos\left(2\pi \left(\frac{t}{T}+\frac{L}{\lambda}\right)+\varphi\right)\]
+\[=Rsin\left(2\pi \left(\frac{t}{T}-\frac{x}{\lambda}\right)+\varphi\right)-Rsin\left(2\pi \left(\frac{t}{T}-\frac{2L-x}{\lambda}\right)+\varphi\right)\]
+\[=2Rsin\left(2\pi \left(\frac{L-x}{\lambda}\right)\right)cos\left(2\pi \left(\frac{t}{T}-\frac{L}{\lambda}\right)+\varphi\right)\]
 \paragraph{}Nous voulons trouver les extrema et les points d'inflexion de cette expression en fonction de l'espace $x$.
 \paragraph{}Pour calculer les extrema, il faut trouver quand la partie qui dépend de l'espace soit $sin\left(2\pi \left(\frac{L-x}{\lambda}\right)\right)$ prend des valeurs extrémales. Vu qu'il s'agit d'un sinus, il prend comme valeurs extrémales $1$ et $-1$ lorsque son paramètre vaut $k\pi+\frac{\pi}{2}$. Résolvons cette petite équation.
 \[2\pi\left(\frac{L-x}{\lambda}\right)=k\pi+\frac{\pi}{2}\]
